@@ -1,0 +1,13 @@
+n=0:9;x=5*(0.6).^n;N=10;
+y=cirshift(x,-4,N);
+figure(1)
+subplot(2,1,1);stem(n,x);
+title('序列x(n)');xlabel('n');ylabel('x(n)');
+subplot(2,1,2);stem(n,y);
+title('序列y(n)');xlabel('n');ylabel('y(n)');
+y=cirshift(x,3,N);
+figure(2)
+subplot(2,1,1);stem(n,x);
+title('序列x(n)');xlabel('n');ylabel('x(n)');
+subplot(2,1,2);stem(n,y);
+title('序列y(n)');xlabel('n');ylabel('y(n)');
