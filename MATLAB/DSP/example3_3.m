@@ -1,0 +1,12 @@
+%计算余弦组合信号的DFT
+n=0:9;x=0.8*cos(0.47*pi*n)+0.4*cos(0.53*pi*n);
+N=10;
+X=dft(x,N);
+magX=abs(X) 
+phaX=angle(X)*180/pi
+k=0:9;
+figure(2)
+subplot(2,1,1);stem(k,magX);
+title('DFT的幅度');xlabel('k');
+subplot(2,1,2);stem(k,phaX);
+title('DFT的相位');xlabel('k');

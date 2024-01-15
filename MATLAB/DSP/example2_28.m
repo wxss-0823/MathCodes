@@ -1,0 +1,15 @@
+%计算系统响应
+%输入差分方程系数
+a=[1,-0.8,0.5];b=[1];
+%计算冲激响应
+x=impseq(0,0,20);n=0:20;
+h=filter(b,a,x);
+subplot(2,1,1);stem(n,h);title('冲激响应');
+xlabel('n');ylabel('h(n)');
+%计算阶跃响应
+x=stepseq(0,0,20);
+s=filter(b,a,x);
+subplot(2,1,2);stem(n,s);title('阶跃响应');
+xlabel('n');ylabel('s(n)');
+%求极点模，判断系统稳定性
+z=roots(a);magz=abs(z)

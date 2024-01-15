@@ -1,0 +1,15 @@
+%计算系统响应
+%输入差分方程系数
+b=[1,0.5];a=[1,-0.8,0.6];
+%计算冲激响应
+x=impseq(0,0,20);n=0:20;
+h=filter(b,a,x);
+subplot(2,1,1);stem(n,h);title('冲激响应');
+xlabel('n');ylabel('y(n)');
+%求系统对x(n)的响应
+n=0:10;x=0.8.^n;nx=0:10;nh=0:20;
+[y,ny]=conv_m(x,nx,h,nh);
+subplot(2,1,2);stem(ny,y);title('系统对x(n)的响应');
+xlabel('n');ylabel('y(n)');
+%求极点模，判断稳定性
+z=roots(a);magz=abs(z)

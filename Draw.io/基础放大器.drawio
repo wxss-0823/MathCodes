@@ -1,0 +1,77 @@
+<mxfile host="Electron" modified="2023-05-31T16:34:10.088Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="DCCuJdLWpbDaE996cZD2" version="21.2.8" type="device">
+  <diagram name="第 1 页" id="l9lkt5_mjGn__zZ7J9xY">
+    <mxGraphModel dx="781" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WoWV4C0FcebCr_B61rdA-1" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.electrical.abstract.operational_amp_2;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="98" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-2" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.electrical.signal_sources.source;aspect=fixed;points=[[0.5,0,0],[1,0.5,0],[0.5,1,0],[0,0.5,0]];elSignalType=ac;" vertex="1" parent="1">
+          <mxGeometry x="205" y="190" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-3" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="190" y="310" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-4" value="" style="endArrow=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.165;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WoWV4C0FcebCr_B61rdA-2" target="WoWV4C0FcebCr_B61rdA-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="310" as="sourcePoint" />
+            <mxPoint x="430" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-5" value="" style="endArrow=none;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.835;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WoWV4C0FcebCr_B61rdA-3" target="WoWV4C0FcebCr_B61rdA-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="310" as="sourcePoint" />
+            <mxPoint x="430" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="230" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-6" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.electrical.signal_sources.signal_ground;" vertex="1" parent="1">
+          <mxGeometry x="207.5" y="360" width="45" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-7" value="" style="pointerEvents=1;verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.electrical.resistors.resistor_2;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="289" y="150" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-15" value="" style="endArrow=none;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="WoWV4C0FcebCr_B61rdA-1" target="WoWV4C0FcebCr_B61rdA-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="250" as="sourcePoint" />
+            <mxPoint x="440" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="245" />
+              <mxPoint x="400" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-16" value="" style="endArrow=none;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="WoWV4C0FcebCr_B61rdA-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270" y="215" as="sourcePoint" />
+            <mxPoint x="430" y="255" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-17" value="" style="endArrow=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="245" as="sourcePoint" />
+            <mxPoint x="480" y="245" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-18" value="R" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-19" value="Vo" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-20" value="Vi" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="165" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WoWV4C0FcebCr_B61rdA-21" value="Rf" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="299" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
