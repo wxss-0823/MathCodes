@@ -1,7 +1,7 @@
 % 1.basic parameter
 clear;clc;
 a = 0.6667 * 10^(-3);
-b = 194.4945 ;
+b = 194.4945;
 % vm = 1,2,3
 vm = 1;
 % fai0 = 0,-0.5,0.5 m Wb
@@ -25,3 +25,11 @@ I = W .*vt;
 plot(vt,I*1000);
 xlabel('电压/V');
 ylabel('电流/mA');
+%% 保存数据
+data = zeros(length(I),2);
+for i=1:length(I)
+    data(i,1) = I(i);
+    data(i,2) = vt(i);
+end
+
+save("Multisim忆阻器数据.txt","data","-ascii")
