@@ -7,12 +7,13 @@ m=4*sys_param.sample_freq/sys_param.symbol_rate;
 n=N/m;
 
 I_noise=input_data.*cos(2*pi*sys_param.carrier_freq*t);
-Q_noise=-input_data.*sin(2*pi*sys_param.carrier_freq*t);
+Q_noise=input_data.*sin(2*pi*sys_param.carrier_freq*t);
 
 %低通滤波
 [b,a]=butter(2,2*sys_param.symbol_rate/sys_param.sample_freq); %设计巴特沃斯滤波器
 I=filtfilt(b,a,I_noise);
 Q=filtfilt(b,a,Q_noise);
+
 
 %定时抽取
 nn=(0.6:1:n)*m;

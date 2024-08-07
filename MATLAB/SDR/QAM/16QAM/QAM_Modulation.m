@@ -18,6 +18,6 @@ rcos=firrcos(16,sys_param.symbol_rate/4,sys_param.symbol_rate/4,sys_param.sample
 I=filter(rcos,1,X);
 Q=filter(rcos,1,Y);
 
-modulated_signal=I.*cos(2*pi*sys_param.carrier_freq*t)-Q.*sin(2*pi*sys_param.carrier_freq*t);
+modulated_signal=I.*cos(2*pi*sys_param.carrier_freq*t)+Q.*sin(2*pi*sys_param.carrier_freq*t);
 
 
