@@ -1,0 +1,6 @@
+﻿[WksPlotMenuMRUList]
+Version = 2
+1 = {"33249","","折线图(L)"}
+
+[Ver]
+34
