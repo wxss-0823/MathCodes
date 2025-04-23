@@ -3,3 +3,4 @@
 2024-09-12 D:\Program Files (x86)\项目文件\MathCodes\OriginLab\Origin Graph\mem_sim.opju
 2024-09-12 D:\Program Files (x86)\项目文件\MathCodes\OriginLab\Backup\mem_sim.opju
 2024-09-12 D:\Users\Wang Xishengshun\OneDrive\Documents\MathCodes\OriginLab\User Files\black.opju
+2025-04-23 D:\home\wxss\GitProject\MathCodes\OriginLab\Origin Graph\2024.5.21\神经元-突触-神经元.opju
