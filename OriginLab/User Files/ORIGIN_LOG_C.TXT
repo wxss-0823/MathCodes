@@ -1418,3 +1418,137 @@
   22144	    24203	        0	5684	Chkpt 1
   22144	    24343	      140	5684	Checkpt 0
   22144	    24343	        0	5684	Chkpt 1
+   2348	        0	        0	3b3c	D:\usr\bin\OriginLab\Origin2024\
+   2348	        0	        0	3b3c	PlatformId = 2,   MajorVersion = 10,  MinorVersion = 0
+   2348	        0	        0	3b3c	ServicePackMajor = 0,   ServicePackMinor = 0
+   2348	        0	        0	3b3c	64 bits
+   2348	      110	      110	3b3c	CrashRpt|bIsCrashRptEnabled: 1
+   2348	      110	        0	3b3c	I0001
+   2348	      110	        0	3b3c	I0002
+   2348	      110	        0	3b3c	AI0
+   2348	      110	        0	3b3c	AI1:0
+   2348	      110	        0	3b3c	10.1.0  b178
+   2348	      110	        0	3b3c	Buld Time:  Dec  6 2023  12:02:41
+   2348	      110	        0	3b3c	@LOG = 9
+   2348	      110	        0	3b3c	EOLOG 1
+   2348	      110	        0	3b3c	EOLOG 2
+   2348	      110	        0	3b3c	Scope begin: okfxSGIP
+   2348	      110	        0	3b3c	okfxSGIP: File is 
+   2348	      110	        0	3b3c	EOLOG 4
+   2348	      110	        0	3b3c	CML: 
+   2348	      110	        0	3b3c	EOLOG 5
+   2348	      110	        0	3b3c	EOLOG 6
+   2348	      110	        0	3b3c	EOLOG 6 VBNA
+   2348	      110	        0	3b3c	EL+*L+ C:\ProgramData\OriginLab\osn.dat
+   2348	      125	       15	3b3c	Scope begin: okfxSGIP
+   2348	      125	        0	3b3c	okfxSGIP: 1 
+   2348	      125	        0	3b3c	okfxSGIP: 2 Empty
+   2348	      125	        0	3b3c	okfxSGIP: 5 D:\usr\bin\OriginLab\Origin2024\
+   2348	      125	        0	3b3c	okfxSGIP: 6 
+   2348	      125	        0	3b3c	okfxSGIP: 7 
+   2348	      125	        0	3b3c	okfxSGIP: 10, First Run 0
+   2348	      125	        0	3b3c	Scope begin: isinipr
+   2348	      125	        0	3b3c	isinipr: 2 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+   2348	      141	       16	3b3c	okfxSGIP: 11, Path From Reg 0
+   2348	      141	        0	3b3c	okfxSGIP: 12 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+   2348	      141	        0	3b3c	okfxSGIP: 13
+   2348	      141	        0	3b3c	okfxSGIP: 14 OriginLab\User Files\
+   2348	      157	       16	3b3c	okfxSGIP: 28 0
+   2348	      157	        0	3b3c	okfxSGIP: 29 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+   2348	      157	        0	3b3c	okfxSGIP: 32, Returning 0
+   2348	      157	        0	3b3c	EOLOG 7
+   2348	      157	        0	3b3c	EOLOG 8
+   2348	      157	        0	3b3c	OLOG 1
+   2348	      157	        0	3b3c	OLOG 2
+   2348	      172	       15	3b3c	aacl0
+   2348	      172	        0	3b3c	11827
+   2348	      188	       16	3b3c	CS: 41
+   2348	      188	        0	3b3c	CS: 41
+   2348	      188	        0	3b3c	CS: 41
+   2348	      188	        0	3b3c	CS: 31
+   2348	      188	        0	3b3c	CS: 51
+   2348	      204	       16	3b3c	CS: 21
+   2348	      204	        0	3b3c	2348
+   2348	      204	        0	3b3c	OLOG 3
+   2348	      219	       15	3b3c	OLOG 4
+   2348	      219	        0	3b3c	OLOG 5
+   2348	      219	        0	3b3c	OLOG 9
+   2348	      219	        0	3b3c	OLOG 10
+   2348	      219	        0	3b3c	OLOG 11
+   2348	      219	        0	3b3c	OLOG 12
+   2348	      219	        0	3b3c	OSS-1
+   2348	      250	       31	3b3c	OLOG 12
+   2348	      250	        0	3b3c	76982
+   2348	      250	        0	3b3c	293
+   2348	      266	       16	3b3c	294
+   2348	      313	       47	3b3c	295
+   2348	     2500	     2187	3b3c	295-
+   2348	     2500	        0	3b3c	295+
+   2348	     2500	        0	3b3c	1957
+   2348	     2500	        0	3b3c	3457
+   2348	     2500	        0	3b3c	3458
+   2348	     2922	      422	3b3c	323457
+   2348	     2922	        0	3b3c	LRS: 0
+   2348	     2954	       32	3b3c	07845
+   2348	     3860	      906	3b3c	0021
+   2348	     3860	        0	3b3c	0022
+   2348	     3860	        0	3b3c	0023
+   2348	     3891	       31	3b3c	IIE
+   2348	     3891	        0	3b3c	EL+ 0
+   2348	     3891	        0	3b3c	EL+ 1
+   2348	     3891	        0	3b3c	EL+ 2
+   2348	     3891	        0	3b3c	EL+ 3
+   2348	     3891	        0	3b3c	EL+ 4
+   2348	     3891	        0	3b3c	EL+ 5
+   2348	     3938	       47	3b3c	EL+ 6
+   2348	     3938	        0	3b3c	EL+ 7
+   2348	     3938	        0	3b3c	EL+ 8
+   2348	     3938	        0	3b3c	EL+ 9
+   2348	     3938	        0	3b3c	id=
+   2348	     3969	       31	53d0	CS: 10
+   2348	     3985	       16	53d0	CS: 10
+   2348	     3985	        0	53d0	CS: 50
+   2348	     4563	      578	3b3c	Checkpt 0
+   2348	     4563	        0	3b3c	Checkpt PM
+   2348	     4704	      141	3b3c	CS: 10
+   2348	     4704	        0	3b3c	CS: 50
+   2348	     4704	        0	3b3c	CS: 10
+   2348	     4704	        0	3b3c	CS: 50
+   2348	     4704	        0	3b3c	Checkpt 0
+   2348	     4704	        0	3b3c	Checkpt 6
+   2348	     4704	        0	3b3c	Checkpt 0
+   2348	     4704	        0	3b3c	Chkpt 1
+   2348	     4735	       31	3b3c	Checkpt 0
+   2348	     4735	        0	3b3c	Chkpt 1
+   2348	     4766	       31	3b3c	Checkpt 0
+   2348	     4766	        0	3b3c	Chkpt 1
+   2348	     4782	       16	3b3c	Checkpt 0
+   2348	     4782	        0	3b3c	Chkpt 1
+   2348	     5000	      218	3b3c	Checkpt 0
+   2348	     5000	        0	3b3c	Chkpt 1
+   2348	     5032	       32	3b3c	Checkpt 0
+   2348	     5032	        0	3b3c	Chkpt 1
+   2348	     5079	       47	3b3c	Checkpt 0
+   2348	     5079	        0	3b3c	Chkpt 1
+   2348	     5094	       15	3b3c	Checkpt 0
+   2348	     5094	        0	3b3c	Chkpt 1
+   2348	     5094	        0	3b3c	Checkpt 0
+   2348	     5094	        0	3b3c	Chkpt 1
+   2348	     5110	       16	3b3c	Checkpt 0
+   2348	     5110	        0	3b3c	Chkpt 1
+   2348	     5110	        0	3b3c	Checkpt 0
+   2348	     5110	        0	3b3c	Chkpt 1
+   2348	     5125	       15	3b3c	Checkpt 0
+   2348	     5125	        0	3b3c	Chkpt 1
+   2348	     5125	        0	3b3c	Checkpt 0
+   2348	     5125	        0	3b3c	Chkpt 1
+   2348	     5141	       16	3b3c	Checkpt 0
+   2348	     5141	        0	3b3c	Chkpt 1
+   2348	     5141	        0	3b3c	Checkpt 0
+   2348	     5141	        0	3b3c	Chkpt 1
+   2348	     5141	        0	3b3c	Checkpt 0
+   2348	     5141	        0	3b3c	Chkpt 1
+   2348	     5157	       16	3b3c	Checkpt 0
+   2348	     5157	        0	3b3c	Chkpt 1
+   2348	     5188	       31	3b3c	Checkpt 0
+   2348	     5188	        0	3b3c	Chkpt 1
