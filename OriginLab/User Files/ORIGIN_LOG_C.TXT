@@ -2998,3 +2998,493 @@
   44092	    40953	        0	8a8c	Chkpt 1
   44092	    40968	       15	8a8c	Checkpt 0
   44092	    40968	        0	8a8c	Chkpt 1
+  39024	        0	        0	9f18	D:\usr\bin\OriginLab\Origin2024\
+  39024	        0	        0	9f18	PlatformId = 2,   MajorVersion = 10,  MinorVersion = 0
+  39024	        0	        0	9f18	ServicePackMajor = 0,   ServicePackMinor = 0
+  39024	        0	        0	9f18	64 bits
+  39024	      125	      125	9f18	CrashRpt|bIsCrashRptEnabled: 1
+  39024	      125	        0	9f18	I0001
+  39024	      125	        0	9f18	I0002
+  39024	      125	        0	9f18	AI0
+  39024	      125	        0	9f18	AI1:0
+  39024	      125	        0	9f18	10.1.0  b178
+  39024	      125	        0	9f18	Buld Time:  Dec  6 2023  12:02:41
+  39024	      125	        0	9f18	@LOG = 9
+  39024	      125	        0	9f18	EOLOG 1
+  39024	      125	        0	9f18	EOLOG 2
+  39024	      125	        0	9f18	Scope begin: okfxSGIP
+  39024	      125	        0	9f18	okfxSGIP: File is 
+  39024	      125	        0	9f18	EOLOG 4
+  39024	      125	        0	9f18	CML: 
+  39024	      125	        0	9f18	EOLOG 5
+  39024	      141	       16	9f18	EOLOG 6
+  39024	      141	        0	9f18	EOLOG 6 VBNA
+  39024	      141	        0	9f18	EL+*L+ C:\ProgramData\OriginLab\osn.dat
+  39024	      156	       15	9f18	Scope begin: okfxSGIP
+  39024	      156	        0	9f18	okfxSGIP: 1 
+  39024	      156	        0	9f18	okfxSGIP: 2 Empty
+  39024	      156	        0	9f18	okfxSGIP: 5 D:\usr\bin\OriginLab\Origin2024\
+  39024	      156	        0	9f18	okfxSGIP: 6 
+  39024	      156	        0	9f18	okfxSGIP: 7 
+  39024	      156	        0	9f18	okfxSGIP: 10, First Run 0
+  39024	      156	        0	9f18	Scope begin: isinipr
+  39024	      156	        0	9f18	isinipr: 2 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+  39024	      172	       16	9f18	isinipr: 6 Copy From Server D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+  39024	      172	        0	9f18	isinipr: 7 Copy From Server 1
+  39024	      172	        0	9f18	isinipr: 8 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\Origin.ini
+  39024	      172	        0	9f18	isinipr: 16 Returning 1
+  39024	      172	        0	9f18	okfxSGIP: 11, Path From Reg 1
+  39024	      172	        0	9f18	okfxSGIP: 12 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+  39024	      172	        0	9f18	okfxSGIP: 28 1
+  39024	      172	        0	9f18	okfxSGIP: 29 D:\home\wxss\GitProject\MathCodes\OriginLab\User Files\
+  39024	      172	        0	9f18	okfxSGIP: 32, Returning 1
+  39024	      172	        0	9f18	EOLOG 7
+  39024	      172	        0	9f18	EOLOG 8
+  39024	      187	       15	9f18	OLOG 1
+  39024	      187	        0	9f18	OLOG 2
+  39024	      187	        0	9f18	aacl0
+  39024	      187	        0	9f18	11827
+  39024	      219	       32	9f18	CS: 41
+  39024	      219	        0	9f18	CS: 41
+  39024	      219	        0	9f18	CS: 41
+  39024	      219	        0	9f18	CS: 31
+  39024	      219	        0	9f18	CS: 51
+  39024	      219	        0	9f18	CS: 21
+  39024	      234	       15	9f18	2348
+  39024	      234	        0	9f18	OLOG 3
+  39024	      250	       16	9f18	OLOG 4
+  39024	      250	        0	9f18	OLOG 5
+  39024	      250	        0	9f18	OLOG 9
+  39024	      250	        0	9f18	OLOG 10
+  39024	      250	        0	9f18	OLOG 11
+  39024	      250	        0	9f18	OLOG 12
+  39024	      266	       16	9f18	OSS-1
+  39024	      297	       31	9f18	OLOG 12
+  39024	      297	        0	9f18	76982
+  39024	      297	        0	9f18	293
+  39024	      297	        0	9f18	294
+  39024	      344	       47	9f18	295
+  39024	     1984	     1640	9f18	295-
+  39024	     1984	        0	9f18	295+
+  39024	     2000	       16	9f18	1957
+  39024	     2000	        0	9f18	3457
+  39024	     2000	        0	9f18	3458
+  39024	     2312	      312	9f18	323457
+  39024	     2312	        0	9f18	LRS: 0
+  39024	     2328	       16	9f18	07845
+  39024	     3203	      875	9f18	0021
+  39024	     3203	        0	9f18	0022
+  39024	     3203	        0	9f18	0023
+  39024	     3219	       16	9f18	IIE
+  39024	     3234	       15	9f18	EL+ 0
+  39024	     3234	        0	9f18	EL+ 1
+  39024	     3234	        0	9f18	EL+ 2
+  39024	     3234	        0	9f18	EL+ 3
+  39024	     3234	        0	9f18	EL+ 4
+  39024	     3234	        0	9f18	EL+ 5
+  39024	     3266	       32	9f18	EL+ 6
+  39024	     3266	        0	9f18	EL+ 7
+  39024	     3266	        0	9f18	EL+ 8
+  39024	     3266	        0	9f18	EL+ 9
+  39024	     3266	        0	9f18	id=
+  39024	     3297	       31	c6f4	CS: 10
+  39024	     3297	        0	c6f4	CS: 10
+  39024	     3297	        0	c6f4	CS: 50
+  39024	     3781	      484	9f18	Checkpt 0
+  39024	     3781	        0	9f18	Checkpt PM
+  39024	     3891	      110	9f18	CS: 10
+  39024	     3891	        0	9f18	CS: 50
+  39024	     3906	       15	9f18	CS: 10
+  39024	     3906	        0	9f18	CS: 50
+  39024	     3906	        0	9f18	Checkpt 0
+  39024	     3906	        0	9f18	Checkpt 6
+  39024	     3906	        0	9f18	Checkpt 0
+  39024	     3906	        0	9f18	Chkpt 1
+  39024	     3922	       16	9f18	Checkpt 0
+  39024	     3922	        0	9f18	Chkpt 1
+  39024	     3969	       47	9f18	Checkpt 0
+  39024	     3969	        0	9f18	Chkpt 1
+  39024	     4047	       78	9f18	Checkpt 0
+  39024	     4047	        0	9f18	Chkpt 1
+  39024	     4047	        0	9f18	Checkpt 0
+  39024	     4047	        0	9f18	Chkpt 1
+  39024	     4062	       15	9f18	Checkpt 0
+  39024	     4062	        0	9f18	Chkpt 1
+  39024	     4062	        0	9f18	Checkpt 0
+  39024	     4062	        0	9f18	Chkpt 1
+  39024	     4062	        0	9f18	Checkpt 0
+  39024	     4062	        0	9f18	Chkpt 1
+  39024	     4078	       16	9f18	Checkpt 0
+  39024	     4078	        0	9f18	Chkpt 1
+  39024	     4078	        0	9f18	Checkpt 0
+  39024	     4078	        0	9f18	Chkpt 1
+  39024	     4078	        0	9f18	Checkpt 0
+  39024	     4078	        0	9f18	Chkpt 1
+  39024	     4078	        0	9f18	Checkpt 0
+  39024	     4078	        0	9f18	Chkpt 1
+  39024	     4109	       31	9f18	Checkpt 0
+  39024	     4109	        0	9f18	Chkpt 1
+  39024	     4109	        0	9f18	Checkpt 0
+  39024	     4109	        0	9f18	Chkpt 1
+  39024	     4125	       16	9f18	Checkpt 0
+  39024	     4125	        0	9f18	Chkpt 1
+  39024	     4125	        0	9f18	Checkpt 0
+  39024	     4125	        0	9f18	Chkpt 1
+  39024	     4125	        0	9f18	Checkpt 0
+  39024	     4125	        0	9f18	Chkpt 1
+  39024	     4125	        0	9f18	Checkpt 0
+  39024	     4125	        0	9f18	Chkpt 1
+  39024	     4141	       16	9f18	Checkpt 0
+  39024	     4141	        0	9f18	Chkpt 1
+  39024	     4141	        0	9f18	Checkpt 0
+  39024	     4141	        0	9f18	Chkpt 1
+  39024	     4141	        0	9f18	Checkpt 0
+  39024	     4141	        0	9f18	Chkpt 1
+  39024	     4156	       15	9f18	Checkpt 0
+  39024	     4156	        0	9f18	Chkpt 1
+  39024	     4156	        0	9f18	Checkpt 0
+  39024	     4156	        0	9f18	Chkpt 1
+  39024	     4156	        0	9f18	Checkpt 0
+  39024	     4156	        0	9f18	Chkpt 1
+  39024	     4172	       16	9f18	Checkpt 0
+  39024	     4172	        0	9f18	Chkpt 1
+  39024	     4172	        0	9f18	Checkpt 0
+  39024	     4172	        0	9f18	Chkpt 1
+  39024	     4187	       15	9f18	Checkpt 0
+  39024	     4187	        0	9f18	Chkpt 1
+  39024	     4187	        0	9f18	Checkpt 0
+  39024	     4187	        0	9f18	Chkpt 1
+  39024	     4203	       16	9f18	Checkpt 0
+  39024	     4203	        0	9f18	Chkpt 1
+  39024	     4203	        0	9f18	Checkpt 0
+  39024	     4203	        0	9f18	Chkpt 1
+  39024	     4203	        0	9f18	Checkpt 0
+  39024	     4203	        0	9f18	Chkpt 1
+  39024	     4203	        0	9f18	Checkpt 0
+  39024	     4203	        0	9f18	Chkpt 1
+  39024	     4203	        0	9f18	Checkpt 0
+  39024	     4203	        0	9f18	Chkpt 1
+  39024	     4219	       16	9f18	Checkpt 0
+  39024	     4219	        0	9f18	Chkpt 1
+  39024	     4219	        0	9f18	Checkpt 0
+  39024	     4219	        0	9f18	Chkpt 1
+  39024	     4250	       31	9f18	Checkpt 0
+  39024	     4250	        0	9f18	Chkpt 1
+  39024	     4281	       31	9f18	Checkpt 0
+  39024	     4281	        0	9f18	Chkpt 1
+  39024	     4297	       16	9f18	Checkpt 0
+  39024	     4297	        0	9f18	Chkpt 1
+  39024	     4297	        0	9f18	Checkpt 0
+  39024	     4297	        0	9f18	Chkpt 1
+  39024	     4297	        0	9f18	Checkpt 0
+  39024	     4297	        0	9f18	Chkpt 1
+  39024	     4312	       15	9f18	Checkpt 0
+  39024	     4312	        0	9f18	Chkpt 1
+  39024	     4312	        0	9f18	Checkpt 0
+  39024	     4312	        0	9f18	Chkpt 1
+  39024	     4312	        0	9f18	Checkpt 0
+  39024	     4312	        0	9f18	Chkpt 1
+  39024	     4312	        0	9f18	Checkpt 0
+  39024	     4312	        0	9f18	Chkpt 1
+  39024	     4312	        0	9f18	Checkpt 0
+  39024	     4312	        0	9f18	Chkpt 1
+  39024	     4328	       16	9f18	Checkpt 0
+  39024	     4328	        0	9f18	Chkpt 1
+  39024	     4328	        0	9f18	Checkpt 0
+  39024	     4328	        0	9f18	Chkpt 1
+  39024	     4422	       94	9f18	Checkpt 0
+  39024	     4422	        0	9f18	Chkpt 1
+  39024	     4437	       15	9f18	Checkpt 0
+  39024	     4437	        0	9f18	Chkpt 1
+  39024	     4437	        0	9f18	Checkpt 0
+  39024	     4437	        0	9f18	Chkpt 1
+  39024	     4437	        0	9f18	Checkpt 0
+  39024	     4437	        0	9f18	Chkpt 1
+  39024	     4453	       16	9f18	Checkpt 0
+  39024	     4453	        0	9f18	Chkpt 1
+  39024	     4484	       31	9f18	Checkpt 0
+  39024	     4484	        0	9f18	Chkpt 1
+  39024	     4500	       16	9f18	Checkpt 0
+  39024	     4500	        0	9f18	Chkpt 1
+  39024	     4500	        0	9f18	Checkpt 0
+  39024	     4500	        0	9f18	Chkpt 1
+  39024	     4516	       16	9f18	Checkpt 0
+  39024	     4516	        0	9f18	Chkpt 1
+  39024	     4516	        0	9f18	Checkpt 0
+  39024	     4516	        0	9f18	Chkpt 1
+  39024	     4531	       15	9f18	Checkpt 0
+  39024	     4531	        0	9f18	Chkpt 1
+  39024	     4531	        0	9f18	Checkpt 0
+  39024	     4531	        0	9f18	Chkpt 1
+  39024	     4578	       47	9f18	Checkpt 0
+  39024	     4578	        0	9f18	Chkpt 1
+  39024	     4578	        0	9f18	Checkpt 0
+  39024	     4578	        0	9f18	Chkpt 1
+  39024	     4594	       16	9f18	Checkpt 0
+  39024	     4594	        0	9f18	Chkpt 1
+  39024	     4594	        0	9f18	Checkpt 0
+  39024	     4594	        0	9f18	Chkpt 1
+  39024	     4594	        0	9f18	Checkpt 0
+  39024	     4594	        0	9f18	Chkpt 1
+  39024	     4594	        0	9f18	Checkpt 0
+  39024	     4594	        0	9f18	Chkpt 1
+  39024	     4594	        0	9f18	Checkpt 0
+  39024	     4594	        0	9f18	Chkpt 1
+  39024	     4594	        0	9f18	Checkpt 0
+  39024	     4594	        0	9f18	Chkpt 1
+  39024	     4609	       15	9f18	Checkpt 0
+  39024	     4609	        0	9f18	Chkpt 1
+  39024	     4609	        0	9f18	Checkpt 0
+  39024	     4609	        0	9f18	Chkpt 1
+  39024	     4609	        0	9f18	Checkpt 0
+  39024	     4609	        0	9f18	Chkpt 1
+  39024	     4609	        0	9f18	Checkpt 0
+  39024	     4609	        0	9f18	Chkpt 1
+  39024	     4625	       16	9f18	Checkpt 0
+  39024	     4625	        0	9f18	Chkpt 1
+  39024	     4625	        0	9f18	Checkpt 0
+  39024	     4625	        0	9f18	Chkpt 1
+  39024	     4641	       16	9f18	Checkpt 0
+  39024	     4641	        0	9f18	Chkpt 1
+  39024	     4656	       15	9f18	Checkpt 0
+  39024	     4656	        0	9f18	Chkpt 1
+  39024	     4656	        0	9f18	Checkpt 0
+  39024	     4656	        0	9f18	Chkpt 1
+  39024	     4656	        0	9f18	Checkpt 0
+  39024	     4656	        0	9f18	Chkpt 1
+  39024	     4656	        0	9f18	Checkpt 0
+  39024	     4656	        0	9f18	Chkpt 1
+  39024	     4656	        0	9f18	Checkpt 0
+  39024	     4656	        0	9f18	Chkpt 1
+  39024	     4703	       47	9f18	Checkpt 0
+  39024	     4703	        0	9f18	Chkpt 1
+  39024	     4750	       47	9f18	Checkpt 0
+  39024	     4750	        0	9f18	Chkpt 1
+  39024	     4750	        0	9f18	Checkpt 0
+  39024	     4750	        0	9f18	Chkpt 1
+  39024	     4750	        0	9f18	Checkpt 0
+  39024	     4750	        0	9f18	Chkpt 1
+  39024	     4766	       16	9f18	Checkpt 0
+  39024	     4766	        0	9f18	Chkpt 1
+  39024	     4766	        0	9f18	Checkpt 0
+  39024	     4766	        0	9f18	Chkpt 1
+  39024	     4766	        0	9f18	Checkpt 0
+  39024	     4766	        0	9f18	Chkpt 1
+  39024	     4781	       15	9f18	Checkpt 0
+  39024	     4781	        0	9f18	Chkpt 1
+  39024	     4781	        0	9f18	Checkpt 0
+  39024	     4781	        0	9f18	Chkpt 1
+  39024	     4797	       16	9f18	Checkpt 0
+  39024	     4797	        0	9f18	Chkpt 1
+  39024	     4812	       15	9f18	Checkpt 0
+  39024	     4812	        0	9f18	Chkpt 1
+  39024	     4812	        0	9f18	Checkpt 0
+  39024	     4812	        0	9f18	Chkpt 1
+  39024	     4812	        0	9f18	Checkpt 0
+  39024	     4812	        0	9f18	Chkpt 1
+  39024	     4812	        0	9f18	Checkpt 0
+  39024	     4812	        0	9f18	Chkpt 1
+  39024	     4828	       16	9f18	Checkpt 0
+  39024	     4828	        0	9f18	Chkpt 1
+  39024	     4828	        0	9f18	Checkpt 0
+  39024	     4828	        0	9f18	Chkpt 1
+  39024	     4828	        0	9f18	Checkpt 0
+  39024	     4828	        0	9f18	Chkpt 1
+  39024	     4844	       16	9f18	Checkpt 0
+  39024	     4844	        0	9f18	Chkpt 1
+  39024	     4844	        0	9f18	Checkpt 0
+  39024	     4844	        0	9f18	Chkpt 1
+  39024	     4844	        0	9f18	Checkpt 0
+  39024	     4844	        0	9f18	Chkpt 1
+  39024	     4859	       15	9f18	Checkpt 0
+  39024	     4859	        0	9f18	Chkpt 1
+  39024	     4859	        0	9f18	Checkpt 0
+  39024	     4859	        0	9f18	Chkpt 1
+  39024	     4859	        0	9f18	Checkpt 0
+  39024	     4859	        0	9f18	Chkpt 1
+  39024	     4906	       47	9f18	Checkpt 0
+  39024	     4906	        0	9f18	Chkpt 1
+  39024	     4953	       47	9f18	Checkpt 0
+  39024	     4953	        0	9f18	Chkpt 1
+  39024	     4969	       16	9f18	Checkpt 0
+  39024	     4969	        0	9f18	Chkpt 1
+  39024	     4984	       15	9f18	Checkpt 0
+  39024	     4984	        0	9f18	Chkpt 1
+  39024	     4984	        0	9f18	Checkpt 0
+  39024	     4984	        0	9f18	Chkpt 1
+  39024	     4984	        0	9f18	Checkpt 0
+  39024	     4984	        0	9f18	Chkpt 1
+  39024	     5000	       16	9f18	Checkpt 0
+  39024	     5000	        0	9f18	Chkpt 1
+  39024	     5000	        0	9f18	Checkpt 0
+  39024	     5000	        0	9f18	Chkpt 1
+  39024	     5000	        0	9f18	Checkpt 0
+  39024	     5000	        0	9f18	Chkpt 1
+  39024	     5016	       16	9f18	Checkpt 0
+  39024	     5016	        0	9f18	Chkpt 1
+  39024	     5031	       15	9f18	Checkpt 0
+  39024	     5031	        0	9f18	Chkpt 1
+  39024	     5078	       47	9f18	Checkpt 0
+  39024	     5078	        0	9f18	Chkpt 1
+  39024	     5141	       63	9f18	Checkpt 0
+  39024	     5141	        0	9f18	Chkpt 1
+  39024	     5203	       62	9f18	Checkpt 0
+  39024	     5203	        0	9f18	Chkpt 1
+  39024	     5266	       63	9f18	Checkpt 0
+  39024	     5266	        0	9f18	Chkpt 1
+  39024	     5328	       62	9f18	Checkpt 0
+  39024	     5328	        0	9f18	Chkpt 1
+  39024	     5391	       63	9f18	Checkpt 0
+  39024	     5391	        0	9f18	Chkpt 1
+  39024	     5391	        0	9f18	Checkpt 0
+  39024	     5391	        0	9f18	Chkpt 1
+  39024	     5391	        0	9f18	Checkpt 0
+  39024	     5391	        0	9f18	Chkpt 1
+  39024	     5391	        0	9f18	Checkpt 0
+  39024	     5391	        0	9f18	Chkpt 1
+  39024	     5406	       15	9f18	Checkpt 0
+  39024	     5406	        0	9f18	Chkpt 1
+  39024	     5437	       31	9f18	Checkpt 0
+  39024	     5437	        0	9f18	Chkpt 1
+  39024	     5453	       16	9f18	Checkpt 0
+  39024	     5453	        0	9f18	Chkpt 1
+  39024	     5516	       63	9f18	Checkpt 0
+  39024	     5516	        0	9f18	Chkpt 1
+  39024	     5578	       62	9f18	Checkpt 0
+  39024	     5578	        0	9f18	Chkpt 1
+  39024	     5641	       63	9f18	Checkpt 0
+  39024	     5641	        0	9f18	Chkpt 1
+  39024	     5703	       62	9f18	Checkpt 0
+  39024	     5703	        0	9f18	Chkpt 1
+  39024	     5734	       31	9f18	Checkpt 0
+  39024	     5734	        0	9f18	Chkpt 1
+  39024	     5734	        0	9f18	Checkpt 0
+  39024	     5734	        0	9f18	Chkpt 1
+  39024	     5750	       16	9f18	Checkpt 0
+  39024	     5750	        0	9f18	Chkpt 1
+  39024	     5750	        0	9f18	Checkpt 0
+  39024	     5750	        0	9f18	Chkpt 1
+  39024	     5750	        0	9f18	Checkpt 0
+  39024	     5750	        0	9f18	Chkpt 1
+  39024	     5766	       16	9f18	Checkpt 0
+  39024	     5766	        0	9f18	Chkpt 1
+  39024	     5766	        0	9f18	Checkpt 0
+  39024	     5766	        0	9f18	Chkpt 1
+  39024	     5766	        0	9f18	Checkpt 0
+  39024	     5766	        0	9f18	Chkpt 1
+  39024	     5766	        0	9f18	Checkpt 0
+  39024	     5766	        0	9f18	Chkpt 1
+  39024	     5781	       15	9f18	Checkpt 0
+  39024	     5781	        0	9f18	Chkpt 1
+  39024	     6031	      250	9f18	Checkpt 0
+  39024	     6031	        0	9f18	Chkpt 1
+  39024	     6047	       16	9f18	Checkpt 0
+  39024	     6047	        0	9f18	Chkpt 1
+  39024	     6047	        0	9f18	Checkpt 0
+  39024	     6047	        0	9f18	Chkpt 1
+  39024	     6047	        0	9f18	Checkpt 0
+  39024	     6047	        0	9f18	Chkpt 1
+  39024	     6062	       15	9f18	Checkpt 0
+  39024	     6062	        0	9f18	Chkpt 1
+  39024	     6078	       16	9f18	Checkpt 0
+  39024	     6078	        0	9f18	Chkpt 1
+  39024	     7750	     1672	9f18	Checkpt 0
+  39024	     7750	        0	9f18	Chkpt 1
+  39024	     7797	       47	9f18	Checkpt 0
+  39024	     7797	        0	9f18	Chkpt 1
+  39024	     7797	        0	9f18	Checkpt 0
+  39024	     7797	        0	9f18	Chkpt 1
+  39024	     7797	        0	9f18	Checkpt 0
+  39024	     7797	        0	9f18	Chkpt 1
+  39024	     7797	        0	9f18	Checkpt 0
+  39024	     7797	        0	9f18	Chkpt 1
+  39024	     7812	       15	9f18	Checkpt 0
+  39024	     7812	        0	9f18	Chkpt 1
+  39024	     7812	        0	9f18	Checkpt 0
+  39024	     7812	        0	9f18	Chkpt 1
+  39024	     7812	        0	9f18	Checkpt 0
+  39024	     7812	        0	9f18	Chkpt 1
+  39024	     7828	       16	9f18	Checkpt 0
+  39024	     7828	        0	9f18	Chkpt 1
+  39024	     7828	        0	9f18	Checkpt 0
+  39024	     7828	        0	9f18	Chkpt 1
+  39024	     7828	        0	9f18	Checkpt 0
+  39024	     7828	        0	9f18	Chkpt 1
+  39024	     8125	      297	9f18	Checkpt 0
+  39024	     8125	        0	9f18	Chkpt 1
+  39024	     8141	       16	9f18	Checkpt 0
+  39024	     8141	        0	9f18	Chkpt 1
+  39024	     8141	        0	9f18	Checkpt 0
+  39024	     8141	        0	9f18	Chkpt 1
+  39024	     8156	       15	9f18	Checkpt 0
+  39024	     8156	        0	9f18	Chkpt 1
+  39024	     8156	        0	9f18	Checkpt 0
+  39024	     8156	        0	9f18	Chkpt 1
+  39024	     8219	       63	9f18	Checkpt 0
+  39024	     8219	        0	9f18	Chkpt 1
+  39024	     8250	       31	9f18	Checkpt 0
+  39024	     8250	        0	9f18	Chkpt 1
+  39024	     8250	        0	9f18	Checkpt 0
+  39024	     8250	        0	9f18	Chkpt 1
+  39024	     8266	       16	9f18	Checkpt 0
+  39024	     8266	        0	9f18	Chkpt 1
+  39024	     8297	       31	9f18	Checkpt 0
+  39024	     8297	        0	9f18	Chkpt 1
+  39024	     8453	      156	9f18	Checkpt 0
+  39024	     8453	        0	9f18	Chkpt 1
+  39024	     8453	        0	9f18	Checkpt 0
+  39024	     8453	        0	9f18	Chkpt 1
+  39024	     8469	       16	9f18	Checkpt 0
+  39024	     8469	        0	9f18	Chkpt 1
+  39024	     8469	        0	9f18	Checkpt 0
+  39024	     8469	        0	9f18	Chkpt 1
+  39024	     8469	        0	9f18	Checkpt 0
+  39024	     8469	        0	9f18	Chkpt 1
+  39024	     8484	       15	9f18	Checkpt 0
+  39024	     8484	        0	9f18	Chkpt 1
+  39024	     8547	       63	9f18	Checkpt 0
+  39024	     8547	        0	9f18	Chkpt 1
+  39024	     8609	       62	9f18	Checkpt 0
+  39024	     8609	        0	9f18	Chkpt 1
+  39024	     8828	      219	9f18	Checkpt 0
+  39024	     8828	        0	9f18	Chkpt 1
+  39024	     8859	       31	9f18	Checkpt 0
+  39024	     8859	        0	9f18	Chkpt 1
+  39024	     8859	        0	9f18	Checkpt 0
+  39024	     8859	        0	9f18	Chkpt 1
+  39024	     8891	       32	9f18	Checkpt 0
+  39024	     8891	        0	9f18	Chkpt 1
+  39024	     8891	        0	9f18	Checkpt 0
+  39024	     8891	        0	9f18	Chkpt 1
+  39024	     8891	        0	9f18	Checkpt 0
+  39024	     8891	        0	9f18	Chkpt 1
+  39024	     8891	        0	9f18	Checkpt 0
+  39024	     8891	        0	9f18	Chkpt 1
+  39024	     8891	        0	9f18	Checkpt 0
+  39024	     8891	        0	9f18	Chkpt 1
+  39024	     8891	        0	9f18	Checkpt 0
+  39024	     8891	        0	9f18	Chkpt 1
+  39024	     8906	       15	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8906	        0	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8906	        0	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8906	        0	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8906	        0	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8906	        0	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8906	        0	9f18	Checkpt 0
+  39024	     8906	        0	9f18	Chkpt 1
+  39024	     8922	       16	9f18	Checkpt 0
+  39024	     8922	        0	9f18	Chkpt 1
+  39024	     8984	       62	9f18	Checkpt 0
+  39024	     8984	        0	9f18	Chkpt 1
+  39024	     9047	       63	9f18	Checkpt 0
+  39024	     9047	        0	9f18	Chkpt 1
+  39024	     9062	       15	9f18	Checkpt 0
+  39024	     9062	        0	9f18	Chkpt 1
+  39024	     9109	       47	9f18	Checkpt 0
+  39024	     9109	        0	9f18	Chkpt 1
