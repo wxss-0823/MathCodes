@@ -17,3 +17,6 @@ Rs * (Ri + 100) / (Rs + Ri + 100) == 56, Ri]
 
 Solve[Out[45]]
 NSolve[Out[45]]
+
+
+
