@@ -81,7 +81,7 @@ Ts = 2*pi/fftN;
 % Path number & Time delay
 pathN = 3;
 pathAmFactor = [0.7, 0.4, 0.1];
-timeDelayN = [2^7, 2^8, 2^9];
+timeDelayN = [400, 2^8, 2^9];
 %% Multi Path Signal with Time Delay
 % Delay Multi Path Signals
 multiSymbolWave = zeros(pathN, symbolLen);
@@ -139,7 +139,7 @@ plot(phase, multiPathSignalAddup, "--k")
 title("Multi Path Signal with Time Delay")
 %% Multi Path Signal with Protect Interval
 % Insert Protect Interval into the Symbol Signal
-protectInterval = zeros(1, 2^7);
+protectInterval = zeros(1, 2^10);
 
 % Initialize Protected Symbol Wave
 protectSymbolWave1 = [protectInterval, symbolWave1];
@@ -290,26 +290,105 @@ multiPathCyclicSignalAddup(1, :) = multiPathCyclicSignalAddup(1, :) +  cyclicSym
 plot(cyclicPhase, multiPathCyclicSignalAddup, "--k")
 title("Multi Path Signal with Cyclic Prefix and Time Delay")
 %% Recovery Original Signal from Multi Path Signal with Cyclic Prefix and Time Delay
-% Recovery Sampling Period
+% Split Symbol Wave1 Add-up Series
 splitCyclicAddupSymbolWave1 = multiPathCyclicSignalAddup(2*(cyclicSubSymbolLen+1) + cyclicHeadLen : end);
 
-% Generate Cyclic Matrix
+% Generate Protect Matrix
 splitCyclicAddupSymbolWaveLen = length(splitCyclicAddupSymbolWave1);
-CyclicAddupSymbolWaveMatrix = zeros(splitCyclicAddupSymbolWaveLen);
-signalChannelEstimateMatrix = zeros(splitCyclicAddupSymbolWaveLen);
-signalChannelEstimateSeries = zeros(1, splitCyclicAddupSymbolWaveLen);
-signalChannelEstimateSeries(1, 1:3) = pathAmFactor;
+cyclicSignalChannelEstimateMatrix = zeros(splitCyclicAddupSymbolWaveLen);
+cyclicSignalChannelEstimateSeries = zeros(1, splitCyclicAddupSymbolWaveLen);
 
+for i = 1 : 1 : pathN
+    cyclicSignalChannelEstimateSeries(timeDelayN(i) + 1) = pathAmFactor(i);
+end
+cyclicSignalChannelEstimateSeries(1) = 1;
+
+% Cyclic Shift Signal-Channel Estimate Series
 for i = 1:1:splitCyclicAddupSymbolWaveLen
-    signalChannelEstimateMatrix(i, :) = circshift(signalChannelEstimateSeries, [0, i - 1]);
+    cyclicSignalChannelEstimateMatrix(i, :) = circshift(cyclicSignalChannelEstimateSeries, [0, i - 1]);
 end
 
-recoverySignalSeries = zeros(1, splitCyclicAddupSymbolWaveLen);
-recoverySignalSeries(1, :) = splitCyclicAddupSymbolWave1 / signalChannelEstimateMatrix;
-figure
-plot(symbolWave1)
-hold on
-plot(recoverySignalSeries, "--k")
-hold on
-plot(splitCyclicAddupSymbolWave1);
+% Generate Recovery Matrix
+recoveryCyclicSignalSeries = zeros(1, splitCyclicAddupSymbolWaveLen);
+recoveryCyclicSignalSeries(1, :) = splitCyclicAddupSymbolWave1 / cyclicSignalChannelEstimateMatrix;
 
+% Plot Compare figure
+subplot(3,1,1)
+recoveryPhase = 0 : res : sinLen - res;
+plot(recoveryPhase, symbolWave1)
+hold on
+plot(recoveryPhase, recoveryCyclicSignalSeries, "--k")
+hold on
+plot(recoveryPhase, splitCyclicAddupSymbolWave1);
+legend("Original Symbol", "Recovery Symbol", "Add Up Symbol")
+xlabel("t")
+ylabel("Amplitude")
+title("Recovery Symbol from Multi Path Signal with Cyclic Prefix")
+%% Recovery Original Signal from Multi Path Signal with Protect Interval and Time Delay
+% Split Symbol Wave1 Add-up Series
+splitProtectAddupSymbolWave1 = multiPathProtectedSignalAddup(end-2047 : end);
+
+% Generate Cyclic Matrix
+splitProtectAddupSymbolWaveLen = length(splitProtectAddupSymbolWave1);
+protectSignalChannelEstimateMatrix = zeros(splitProtectAddupSymbolWaveLen);
+protectSignalChannelEstimateSeries = zeros(1, splitProtectAddupSymbolWaveLen);
+
+for i = 1 : 1 : pathN
+    protectSignalChannelEstimateSeries(timeDelayN(i) + 1) = pathAmFactor(i);
+end
+protectSignalChannelEstimateSeries(1) = 1;
+
+% Cyclic Shift Signal-Channel Estimate Series
+for i = 1:1:splitProtectAddupSymbolWaveLen
+    protectSignalChannelEstimateMatrix(i, :) = circshift(protectSignalChannelEstimateSeries, [0, i - 1]);
+end
+
+% Generate Recovery Matrix
+recoverySignalSeries = zeros(1, splitProtectAddupSymbolWaveLen);
+recoverySignalSeries(1, :) = splitProtectAddupSymbolWave1 / protectSignalChannelEstimateMatrix;
+
+% Plot Compare figure
+subplot(3,1,2)
+plot(recoveryPhase, symbolWave1)
+hold on
+plot(recoveryPhase, recoverySignalSeries, "--k")
+hold on
+plot(recoveryPhase, splitProtectAddupSymbolWave1);
+legend("Original Symbol", "Recovery Symbol", "Add Up Symbol")
+xlabel("t")
+ylabel("Amplitude")
+title("Recovery Symbol from Multi Path Signal with Protect Interval")
+%% Recovery Original Signal from Multi Path Signal Only with Time Delay
+% Split Symbol Wave1 Add-up Series
+splitAddupSymbolWave1 = multiPathSignalAddup(end-2047 : end);
+
+% Generate Cyclic Matrix
+splitAddupSymbolWaveLen = length(splitProtectAddupSymbolWave1);
+SignalChannelEstimateMatrix = zeros(splitAddupSymbolWaveLen);
+SignalChannelEstimateSeries = zeros(1, splitAddupSymbolWaveLen);
+
+for i = 1 : 1 : pathN
+    SignalChannelEstimateSeries(timeDelayN(i) + 1) = pathAmFactor(i);
+end
+SignalChannelEstimateSeries(1) = 1;
+
+% Cyclic Shift Signal-Channel Estimate Series
+for i = 1:1:splitAddupSymbolWaveLen
+    SignalChannelEstimateMatrix(i, :) = circshift(SignalChannelEstimateSeries, [0, i - 1]);
+end
+
+% Generate Recovery Matrix
+recoverySignalSeries = zeros(1, splitAddupSymbolWaveLen);
+recoverySignalSeries(1, :) = splitAddupSymbolWave1 / SignalChannelEstimateMatrix;
+
+% Plot Compare figure
+subplot(3,1,3)
+plot(recoveryPhase, symbolWave1)
+hold on
+plot(recoveryPhase, recoverySignalSeries, "--k")
+hold on
+plot(recoveryPhase, splitAddupSymbolWave1);
+legend("Original Symbol", "Recovery Symbol", "Add Up Symbol")
+xlabel("t")
+ylabel("Amplitude")
+title("Recovery Symbol from Multi Path Signal with Delay Time")
