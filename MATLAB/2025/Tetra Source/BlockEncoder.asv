@@ -1,0 +1,35 @@
+function [type2bits, bm2] = BlockEncoder(type1bits, bm1)
+  % Check slot bits length
+  if nargin == 1
+      bm1 = 510;
+  end
+  
+  ntype1bits = length(type1bits);
+  ntype2bits = ntype1bits + 16;
+  
+  if ntype1bits ~= bm1
+     error('error! The length of slot bits is not equal to required bm(%d).', bm1);
+  end
+
+  % The type-1 bits are treated as the coefficients of the polynomial
+  % MX*X^16
+  MX = zeros(ntype2bits);
+  for i=1:1:nslotbits
+    MX(i) = type1bits(ntype2bits - i);
+  end
+
+  % The polynomial only related to K1(ntype1bits)
+  PK1 = zeros(ntype2bits);
+  for i=1:1:16
+    PK1(i + ntype1bits - 1) = 1;
+  end
+
+  % The generator polynomial GX of the code
+  GX = zeros(16);
+  [GX(16), GX(12), GX(5), GX(0)] = deal(1);
+  
+  % The tail polynomial
+  TX = ones(16);
+
+  % The 
+end
