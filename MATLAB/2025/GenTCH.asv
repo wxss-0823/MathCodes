@@ -1,0 +1,28 @@
+function [trafficData, nTrafficData] = GenTCH(dataBits, rate, )
+  % Definition of colour code
+  switch rate
+    case 7.2
+      trafficData = Scramble(dataBits);
+      nTrafficData = length(trafficData);
+
+      if nTrafficData ~= 432
+        error('Error: Encode fail with a wrong traffic data length(%d)', nTrafficData);
+      end
+
+      fprintf('Generate traffic data TCH/7.2 successfully!')
+    case 4.8
+      [rDataBits, cDataBits] = size(dataBits);
+
+      % Check the number of blocks
+      if rDataBits ~= 1 & rDataBits ~= 4 & rDataBits ~= 8
+        error('Error: The wrong number(%d) of blocks of data bits.', rDataBits);
+      end
+
+
+      tailBits = [0, 0, 0, 0];
+      type2bits = [dataBits, tailBits]
+      trafficData = Scramble(Interleaving);
+    case 2.4
+
+  end
+end
