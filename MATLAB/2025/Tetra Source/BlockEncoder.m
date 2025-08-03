@@ -1,42 +1,48 @@
-function [type2bits, bm2] = BlockEncoder(type1bits, bm1)
-  % Check slot bits length
-  if nargin == 1
-      bm1 = 510;
-  end
+function type2Bits = BlockEncoder(type1Bits)
+  % Mathematica Checked
+  [rType1Bits, cType1Bits] = size(type1Bits);
+  cType2Bits = cType1Bits + 16;
   
-  ntype1bits = length(type1bits);
-  ntype2bits = ntype1bits + 16;
-  
-  % if ntype1bits ~= bm1
-  %    error('error! The length of slot bits is not equal to required bm(%d).', bm1);
-  % end
-
   % The type-1 bits are treated as the coefficients of the polynomial
   % MX*X^16
-  MX = zeros(1, ntype2bits);
-  for i=1:1:ntype1bits
-    MX(ntype2bits - i) = type1bits(i);
+  % Descending sorting
+  MX = zeros(rType1Bits, cType2Bits);
+  for i = 1:1:rType1Bits
+    for j=1:1:cType1Bits
+      MX(i, j) = type1Bits(i, j);
+    end
   end
 
   % The polynomial only related to K1(ntype1bits)
-  PK1 = zeros(1, ntype2bits);
+  % Descending sorting
+  PK1 = zeros(1, cType2Bits);
   for i=1:1:16
-    PK1(i + ntype1bits - 1) = 1;
+    PK1(i) = 1;
   end
 
   % The generator polynomial GX of the code
-  GX = zeros(1, 16);
-  [GX(16), GX(12), GX(5), GX(1)] = deal(1);
+  GX = zeros(1, 17);
+  [GX(1), GX(5), GX(12), GX(17)] = deal(1);
   
   % The tail polynomial
   TX = ones(1, 16);
 
   % The resultant coefficient polynomial FX
-  FX = zeros(1, 16);
-  [~, FX] = polydiv(xor(MX, PK1), GX);
+  xorFX = zeros(rType1Bits, cType2Bits);
+  for i = 1:1:rType1Bits
+    xorFX(i, :) = xor(MX(i,:), PK1);
+  end
+
+  [~, modFX] = PolyDiv2(xorFX, GX);
+  FX = zeros(rType1Bits, 16);
+
+  for i = 1:1:rType1Bits
+    FX(i, :) = xor(modFX(i,:), TX);
+  end
 
   % The type-2 bits sequences
-  type2bits = FX;
-  bm2 = ntype1bits;
-
+  type2Bits = zeros(rType1Bits, cType2Bits);
+  for i = 1:1:rType1Bits
+    type2Bits(i,:) = [type1Bits(i,:), FX(i,:)];
+  end
 end

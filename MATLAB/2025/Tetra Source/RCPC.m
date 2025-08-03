@@ -1,12 +1,6 @@
-function [Vk, Vkn] = RCPC(type2bits, bm2)
-  % Check type-2 bits length
-
-  ntype2bits = length(type2bits);
-
-  if ntype2bits ~= bm2
-    error('Error: The length of type-2 bits is not equal to bm2(%d)', bm2);
-  end
-
+function type3Bits = RCPC(type2Bits, rate)
+  % Mathematica Checked
+  [rType2Bits, cType2Bits] = size(type2Bits);
 
   % 4 generator polynomials of mother code
   GD = [1, 1, 0, 0, 1; ...
@@ -14,22 +8,22 @@ function [Vk, Vkn] = RCPC(type2bits, bm2)
         1, 1, 1, 0, 1; ...
         1, 1, 0, 1, 1];
 
+  % RCPC code of rate 1/4
   % The 4 bits mother code output V(4(k-1)+i) is
-  tmpVk = zeros(1, 4*ntype2bits);
-
-  for k=1:1:ntype2bits
-    for i=1:1:4
-      for j=1:1:5
-        if k-j <= 0
-          continue;
-        else
-          tmpVk(4*(k-1)+i) = tmpVk(4*(k-1)+i) + type2bits(k-j)*GD(i, j);
+  Vk = zeros(rType2Bits, 4*cType2Bits);
+  for rIndex = 1:1:rType2Bits
+    for k=1:1:cType2Bits
+      for i=1:1:4
+        for j=1:1:5
+          if k-j < 0
+            continue;
+          else
+            Vk(rIndex, 4*(k-1)+i) = xor(Vk(rIndex, 4*(k-1)+i), type2Bits(rIndex, k-j+1)*GD(i, j));
+          end
         end
       end
     end
   end
 
-% RCPC code of rate 1/4
-Vk = tmpVk;
-Vkn = length(tmpVk);
+  type3Bits = Puncturing(Vk, rate);
 end
