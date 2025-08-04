@@ -21,5 +21,5 @@ function dPhase = DiffPhase(bitStream)
       end
     end
   end
-
+  
 end
