@@ -9,10 +9,17 @@ end
 levelQuantify = zeros(rConsMt, cConsMt);
 for i=1:1:rConsMt
   for j=1:1:cConsMt
-    levelQuantify(i, j) = ceil(consMt(i, j) / quantifyAccuracy(i));
+    levelQuantify(i, j) = ceil(consMt(i, j) / quantifyAccuracy(i) + 2^(-dacRes-2));
   end
 end
 levelQuantify = levelQuantify - min(levelQuantify);
+% Eliminate 0
+zerosPos = find(levelQuantify == 0);
+levelQuantify(zerosPos) = levelQuantify(zerosPos) + 1;
+
+% Print power info
+% CaldBfs(levelQuantify, dacRes);
+
 levelQuantify = dec2bin(levelQuantify, dacRes);
 
 end
