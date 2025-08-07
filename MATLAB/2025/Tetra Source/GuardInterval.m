@@ -5,12 +5,12 @@ unModuleFC = zeros(1, nUnmoduleFc);
 RB = 18e3;
 deltaF1 = -6.75e3;
 deltaF2 = 2.25e3;
-f1 = f0 - deltaF1;
-f2 = f0 - deltaF2;
+f1 = f0 + deltaF1;
+f2 = f0 + deltaF2;
 % fs1 = f1/nSamplePerBit;
 % fs2 = f2/nSamplePerBit;
 % nSampleperBITS = 1250
-deltaT = 1/RB/nSamplePerBit;
+deltaT = 1/RB/nSamplePerBit/2;
 t1 = 0; t2 = 0;
 a3 = 2^0;
 

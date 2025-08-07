@@ -4,7 +4,7 @@ RB = 18e3;
 bw = 10e6;
 carrierInterval = 25e3;
 [rBurstBits, cBurstBits] = size(burstBits);
-nDACSample = dacRate/1.35/RB/dacRes;
+nDACSample = dacRate/RB;
 nSymbols = cBurstBits/2;
 
 % Generate the 235 differential phase
@@ -65,11 +65,11 @@ st = tmpSt(symbolOffset:end,:);
 st = st';
 
 % Generate the carrier frequency samples
-ts = 2/1.35/RB/nSample;
+ts = 1/dacRate;
 fct = zeros(rBurstBits, nDACPoints);
 for i=1:1:rBurstBits
   for j=1:1:nDACPoints
-    fct(i,j) = exp(1i*(2*pi*fc(i)*j*ts));
+    fct(i,j) = exp(1i*(2*pi*(fc(i) +  2.25e3)*(j-1)*ts));
   end
 end
 

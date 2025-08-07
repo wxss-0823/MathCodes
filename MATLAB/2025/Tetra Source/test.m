@@ -4,7 +4,14 @@ twf = slotMt;
 % var initialize
 RB = 18E3;
 nRB = 510/2;
-nSample = 2500;
+dacRate = 360000000;
+dacRes = 16;
+bw = 10e6;
+carrierInterval = 25e3;
+
+nDACSample = dacRate/RB;
+
+nSample = nDACSample;
 nPoints = nRB*nSample*rSlot;
 ts = 1/RB/nSample;
 bitTime = 27.78e-6;
@@ -26,22 +33,26 @@ subplot(2,1,1)
 plot(t(1,:), twf(1,:))
 xlabel('t/ms');ylabel('Amplitude');
 title('Time Domain Waveform')
+bitTime = ts*nSample/2*1000;
 xlim([0, 14.167])
 for i=1:1:rSlot
-  xline(bitTime*34*1000*i,'--r');xline(bitTime*504*1000*i,'--r');
+  xline(34*bitTime*i,'--r');xline(504*bitTime*i,'--r');
 end
 
 % set f step
+fPlotPoints = nPoints;
 fs = 1/ts;
-df = 2*fs/nPoints;
-f = zeros(1, nPoints);
-for i = 1:1:nPoints
+df = fs/fPlotPoints;
+f = zeros(1, fPlotPoints);
+for i = 1:1:fPlotPoints
   f(1, i) = (i-1)*df;
 end
 
-fwf = fftshift(abs(fft(twf(1, :))));
+fwf = abs(fft(twf(1, :)));
+absFwf = fwf(fPlotPoints+1:end);
 subplot(2,1,2)
-plot(f(1, 3.184e5:3.1910e5),fwf(1, 3.184e5:3.1910e5))
+% plot(f(1, 3.184e5:3.1910e5),fwf(1, 3.184e5:3.1910e5))
+plot(f, fwf)
 xlabel('f/Hz');ylabel('Amplitude')
 title('Frequency Domain waveform')
 xline(4.5e7-2.5e4,'--r');
