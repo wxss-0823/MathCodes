@@ -69,7 +69,7 @@ ts = 1/dacRate;
 fct = zeros(rBurstBits, nDACPoints);
 for i=1:1:rBurstBits
   for j=1:1:nDACPoints
-    fct(i,j) = exp(1i*(2*pi*(fc(i) +  2.25e3)*(j-1)*ts));
+    fct(i,j) = exp(1i*(2*pi*fc(i)*(j-1)*ts));
   end
 end
 
