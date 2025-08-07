@@ -9,13 +9,22 @@ end
 levelQuantify = zeros(rConsMt, cConsMt);
 for i=1:1:rConsMt
   for j=1:1:cConsMt
-    levelQuantify(i, j) = ceil(consMt(i, j) / quantifyAccuracy(i) + 2^(-dacRes-2));
+    levelQuantify(i, j) = ceil(consMt(i, j) / quantifyAccuracy(i));
   end
 end
-levelQuantify = levelQuantify - min(levelQuantify);
+
+% Let every quantified num be positive
+for i=1:1:rConsMt
+  levelQuantify(i,:) = levelQuantify(i,:) - min(levelQuantify(i,:));
+end
+
 % Eliminate 0
-zerosPos = find(levelQuantify == 0);
-levelQuantify(zerosPos) = levelQuantify(zerosPos) + 1;
+[rZero, cZero] = find(levelQuantify == 0);
+if ~(isempty(rZero))
+  for i=1:1:length(rZero)
+    levelQuantify(rZero(i), cZero(i)) = levelQuantify(rZero(i), cZero(i)) + 1;
+  end
+end
 
 % Print power info
 % CaldBfs(levelQuantify, dacRes);

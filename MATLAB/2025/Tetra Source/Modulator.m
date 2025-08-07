@@ -30,10 +30,12 @@ Sk = exp(1i*SkPhase*pi);
 % Generate the digital modulated symbols
 % A physical chanel is defined as one radio frequency carrierDM-MS and
 % two timeslot per frame
-nCarrier = bw/carrierInterval;
-fc = zeros(1, nCarrier);
+
+% nCarrier = bw/carrierInterval;
+fc = zeros(1, rBurstBits);
 for i = 1:1:rBurstBits
-  fc(i) = f0 + (ceil(i/2)-1) * carrierInterval;
+  % fc(i) = f0 + (ceil(i/2)-1) * carrierInterval;
+  fc(i) = f0 + (i-1) * carrierInterval;
 end
 fn = max(fc);
 
@@ -49,7 +51,6 @@ rctFilt = comm.RaisedCosineTransmitFilter( ...
 b = coeffs(rctFilt);
 rctFilt.Gain = 1/max(b.Numerator);
 % rctFilt.Gain = 1/50;
-
 
 % Baseband molding filtering
 nDACPoints = nSymbols*nSample;
@@ -79,19 +80,15 @@ Mt = real(fct .* st);
 % Generate interslot frequency correction field
 INTERSLOTFC = [zeros(1, 6), ones(1, 26), zeros(1, 8)];
 SLOTFC = [ones(1,8), zeros(1,64), ones(1,8)];
-interFC = GuardInterval(INTERSLOTFC, nSample/2, f0);
+interFC = GuardInterval(INTERSLOTFC, nSample/2, fc);
 slotMt = zeros(rBurstBits, 255*nSample);
 switch burstType
   case 'Sync'
-    innerFC = GuardInterval(SLOTFC, nSample/2, f0);
-    for i=1:1:rBurstBits
-      slotMt(i,:) = [interFC(1, 6*nSample/2+1:end), Mt(i, 1:7*nSample), innerFC(1,:), ...
-        Mt(i, 47*nSample+1:end), interFC(1, 1:6*nSample/2)];
-    end
+    innerFC = GuardInterval(SLOTFC, nSample/2, fc);
+    slotMt(:,:) = [interFC(:, 6*nSample/2+1:end), Mt(:, 1:7*nSample), innerFC(:,:), ...
+      Mt(:, 47*nSample+1:end), interFC(:, 1:6*nSample/2)];
   case {'Norm', 'Line'}
-    for i=1:1:rBurstBits
-      slotMt(i,:) = [interFC(1, 6*nSample/2+1:end), Mt(i, :), interFC(1, 1:6*nSample/2)];
-    end
+    slotMt(:,:) = [interFC(:, 6*nSample/2+1:end), Mt(:, :), interFC(:, 1:6*nSample/2)];
   otherwise
     error('Error: Please check the input burst type.');
 end
