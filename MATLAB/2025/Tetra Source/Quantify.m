@@ -29,6 +29,6 @@ end
 % Print power info
 % CaldBfs(levelQuantify, dacRes);
 
-levelQuantify = dec2bin(levelQuantify, dacRes);
+levelQuantify = dec2hex(levelQuantify, dacRes/4);
 
 end

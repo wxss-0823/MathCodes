@@ -6,7 +6,7 @@ RB = 18e3;
 symbolBw = 25e3;
 nRB = 510/2;
 f0 = 45e6;
-dacRate = 72e7;
+dacRate = 36e7;
 dacRes = 16;
 carrierBw = 10e6;
 carrierInterval = 25e3;
@@ -77,9 +77,11 @@ xlim([startF/1e6, stopF/1e6])
 % Quantify(fwf(1, startN:stopN), dacRes);
 
 % Write to bit file
-% path = "C:\Users\Wxss\Desktop\matlab.txt";
-% pattern = 'w+b';
-% fid = fopen(path, pattern);
-% [rWordMt, cWordMt] = size(wordMt);
-% fwrite(fid, wordMt, 'char');
-% fclose(fid);
+path = "C:\Users\Wxss\Desktop\matlab.txt";
+pattern = 'wt';
+fid = fopen(path, pattern);
+[rWordMt, cWordMt] = size(wordMt);
+for i=1:1:rWordMt
+  fprintf(fid, '%s\n', wordMt(i,:));
+end
+fclose(fid);
