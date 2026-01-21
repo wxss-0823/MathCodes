@@ -1,6 +1,0 @@
-﻿[Ver]
-34
-[WksPlotMenuMRUList]
-Version = 2
-1 = {"33333","","Spline Connected"}
-2 = {"2097173","","Spline"}
