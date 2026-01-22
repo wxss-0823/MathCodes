@@ -6,7 +6,7 @@ RB = 18e3;
 symbolBw = 25e3;
 nRB = 510/2;
 f0 = 45e6;
-dacRate = 36e7;
+dacRate = 72e7;
 dacRes = 16;
 carrierBw = 10e6;
 carrierInterval = 25e3;
@@ -37,7 +37,7 @@ end
 stopT = rSlot * slotTime;
 
 % Plot time domain waveform
-subplot(2,1,1)
+figure(1)
 plot(t(1,:), seriesTwf(1,:))
 xlabel('t/ms');ylabel('Amplitude');
 title('Time Domain Waveform')
@@ -54,19 +54,35 @@ end
 
 % Select useful frequency
 fwf = abs(fft(seriesTwf));
+% Normalization
+fwf = fwf/max(fwf);
+% Amplitude logarithmic & normalization
+fwfLog = 20*log10(fwf);
 
 % Figure var
 f0Point = f0/df;
 startF = f0-symbolBw;
 startN = ceil(startF/df);
 
-% Plot frequency domain waveform
-subplot(2,1,2)
+% Plot frequency domain linear waveform
+figure(2)
+subplot(2,1,1)
 stopF = f0+symbolBw*rSlot;
 stopN = ceil(stopF/df);
 plot(f(1, startN:stopN),fwf(1, startN:stopN))
-xlabel('f/MHz');ylabel('Amplitude')
-title('Frequency Domain waveform')
+xlabel('f/MHz');ylabel('Amplitude/lin')
+title('Frequency Domain waveform(lin)')
+xline((f0-symbolBw/2)/1e6,'--r');
+for i=1:1:rSlot
+xline((f0+(i-1/2)*symbolBw)/1e6,'--r');
+end
+xlim([startF/1e6, stopF/1e6])
+
+% Plot frequency domain logarithmic waveform
+subplot(2,1,2)
+plot(f(1, startN:stopN), fwfLog(1, startN:stopN))
+xlabel('f/MHz');ylabel('Amplitude/log')
+title('Frequency Domain waveform(log)')
 xline((f0-symbolBw/2)/1e6,'--r');
 for i=1:1:rSlot
 xline((f0+(i-1/2)*symbolBw)/1e6,'--r');
@@ -77,7 +93,7 @@ xlim([startF/1e6, stopF/1e6])
 % Quantify(fwf(1, startN:stopN), dacRes);
 
 % Write to bit file
-path = "C:\Users\Wxss\Desktop\matlab.txt";
+path = "C:\Users\w00025121\Desktop\matbit.txt";
 pattern = 'wt';
 fid = fopen(path, pattern);
 [rWordMt, cWordMt] = size(wordMt);
