@@ -1,7 +1,7 @@
 function [wordMt, fn, slotMt] = Modulator(burstBits, f0, dacRate, dacRes, burstType)
 % The input is a useful part of 470 bits of burst
 RB = 18e3;
-bw = 10e6;
+% bw = 10e6;
 carrierInterval = 25e3;
 [rBurstBits, cBurstBits] = size(burstBits);
 nDACSample = dacRate/RB;
