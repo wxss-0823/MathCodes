@@ -77,6 +77,11 @@ end
 % Generate modulated digital signal
 Mt = real(fct .* st);
 
+% Only real part information cannot fully respond to the modulated signal
+% The final implementation requires 
+% the simultaneous retention of 
+% both the real part and the imaginary part as I/Q data
+
 % Generate interslot frequency correction field
 INTERSLOTFC = [zeros(1, 6), ones(1, 26), zeros(1, 8)];
 SLOTFC = [ones(1,8), zeros(1,64), ones(1,8)];
