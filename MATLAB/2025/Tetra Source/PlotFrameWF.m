@@ -93,7 +93,7 @@ xlim([startF/1e6, stopF/1e6])
 % Quantify(fwf(1, startN:stopN), dacRes);
 
 % Write to bit file
-path = "C:\Users\w00025121\Desktop\matbit.txt";
+path = "C:\Users\Wxss\Desktop\matbit.txt";
 pattern = 'wt';
 fid = fopen(path, pattern);
 [rWordMt, cWordMt] = size(wordMt);
