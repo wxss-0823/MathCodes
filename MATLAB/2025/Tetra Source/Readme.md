@@ -52,3 +52,7 @@
 ## 3. 运行注意事项
 
 1. 注意在运行 `PlotFrameWF.m` 文件时，确保 `dacRate` 与 `dacRes` 与生成二进制比特流时，`Modulator.m` 文件的输入参数一致；
+
+## 4. 参考文献
+
+[地面集群无线电（TETRA）；直接模式运行（DMO）的技术要求；第2部分:无线电方面](https://www.etsi.org/deliver/etsi_en/300300_300399/30039602/01.04.01_60/en_30039602v010401p.pdf)
